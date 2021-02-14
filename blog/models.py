@@ -12,5 +12,8 @@ class Post(models.Model):
     #one user can multiple post but only one author for one post
     author = models.ForeignKey(User,on_delete=models.CASCADE)
 
+    #we need to run migration for update the changes on terminal
 
-
+    def __srt__(self):
+        return self.tittle
+        
