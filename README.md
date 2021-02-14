@@ -45,3 +45,22 @@ then go > project > setting >install_app copy past 'blog.apps.blogConfig',
 
 
 
+Admin
+localhost://8000/admin
+//python manage.ph createsuperuser   //no such table accour
+
+we should run migration for database
+
+python manage.py makemigrations
+//no changes detected
+
+In order to apply to migration 
+python manage.py migrate
+
+python manage.py createsuperuser 
+
+name email password 1234
+
+Anither User
+TestUser
+mnbvcxz1234
